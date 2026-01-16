@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>PowerPoint to PDF - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'><i class='fas fa-arrow-left'></i> Back to Tools</a>
+            <h1><i class='fas fa-presentation'></i> PowerPoint to PDF</h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Convert PowerPoint Presentations to PDF</h2>
+                <p>Transform PowerPoint (.ppt, .pptx) files into shareable, print-ready PDF documents.</p>
+                
+                <div class='conversion-features'>
+                    <h3>Presentation Features Preserved:</h3>
+                    <ul>
+                        <li>Slide layouts and designs</li>
+                        <li>Images and graphics quality</li>
+                        <li>Text formatting and fonts</li>
+                        <li>Animations as static images</li>
+                        <li>Notes and comments</li>
+                    </ul>
+                </div>
+                
+                <div class='slide-options'>
+                    <h3>Slide Selection:</h3>
+                    
+                    <div class='slide-range'>
+                        <label>Slides to Convert:</label>
+                        <select>
+                            <option>All slides</option>
+                            <option>Current slide only</option>
+                            <option>Custom range</option>
+                            <option>Selection</option>
+                        </select>
+                    </div>
+                    
+                    <div class='custom-range' style='display:none;'>
+                        <input type='text' placeholder='e.g., 1-5, 8, 10-12'>
+                        <small>Enter slide numbers or ranges</small>
+                    </div>
+                </div>
+                
+                <div class='layout-options'>
+                    <h3>PDF Layout Options:</h3>
+                    
+                    <div class='layout-type'>
+                        <label><input type='radio' name='layout' checked> One slide per page</label>
+                        <label><input type='radio' name='layout'> Multiple slides per page</label>
+                        <label><input type='radio' name='layout'> Notes page format</label>
+                        <label><input type='radio' name='layout'> Handout format</label>
+                    </div>
+                    
+                    <div class='multiple-slides' style='display:none;'>
+                        <label>Slides per page:</label>
+                        <select>
+                            <option>2 slides</option>
+                            <option>3 slides</option>
+                            <option>4 slides</option>
+                            <option>6 slides</option>
+                            <option>9 slides</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class='quality-options'>
+                    <h3>Quality Settings:</h3>
+                    
+                    <div class='resolution'>
+                        <label>Image Resolution:</label>
+                        <select>
+                            <option>High (300 DPI)</option>
+                            <option>Medium (150 DPI)</option>
+                            <option>Standard (96 DPI)</option>
+                        </select>
+                    </div>
+                    
+                    <div class='pdf-features'>
+                        <label><input type='checkbox' checked> Include slide notes</label>
+                        <label><input type='checkbox'> Create clickable table of contents</label>
+                        <label><input type='checkbox' checked> Embed fonts</label>
+                        <label><input type='checkbox'> Optimize for printing</label>
+                        <label><input type='checkbox'> Add page borders</label>
+                    </div>
+                </div>
+                
+                <div class='upload-section'>
+                    <h3>Upload Presentation:</h3>
+                    <div class='upload-zone'>
+                        <i class='fas fa-file-powerpoint'></i>
+                        <p>Drag & drop PowerPoint file here</p>
+                        <input type='file' accept='.ppt,.pptx'>
+                    </div>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'><i class='fas fa-file-export'></i> Convert to PDF</button>
+                    <button class='preview-btn'><i class='fas fa-search'></i> Preview Slides</button>
+                </div>
+            </div>
+            
+            <div class='presentation-benefits'>
+                <h3><i class='fas fa-award'></i> PDF Benefits for Presentations:</h3>
+                <ul>
+                    <li>Universal file compatibility</li>
+                    <li>Fixed formatting across devices</li>
+                    <li>Smaller file size for sharing</li>
+                    <li>Print-ready quality</li>
+                    <li>Enhanced security options</li>
+                </ul>
+            </div>
+            
+            <a href='INDEX.HTML'><i class='fas fa-sliders-h'></i> Presentation Tools</a>
+        </main>
+        
+        <footer class='tool-footer'>
+            <p><i class='fas fa-projector'></i> Professional PowerPoint to PDF Conversion</p>
+        </footer>
+    </div>
+</body>
+</html>

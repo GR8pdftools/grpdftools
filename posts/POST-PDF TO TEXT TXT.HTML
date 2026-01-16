@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>PDF to Text (.txt) - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'><i class='fas fa-arrow-left'></i> Back to Tools</a>
+            <h1><i class='fas fa-file-text'></i> PDF to Text (.txt)</h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Extract Pure Text from PDF Documents</h2>
+                <p>Convert PDF files to plain text format for editing, analysis, or data processing.</p>
+                
+                <div class='extraction-features'>
+                    <h3>Text Extraction Features:</h3>
+                    <ul>
+                        <li>High-accuracy OCR for scanned PDFs</li>
+                        <li>Text formatting preservation options</li>
+                        <li>Multi-language support</li>
+                        <li>Page-by-page extraction</li>
+                        <li>Clean text output</li>
+                    </ul>
+                </div>
+                
+                <div class='ocr-options'>
+                    <h3>Text Recognition:</h3>
+                    
+                    <div class='ocr-type'>
+                        <label><input type='radio' name='ocr' checked> Standard text extraction (digital PDFs)</label>
+                        <label><input type='radio' name='ocr'> OCR for scanned documents</label>
+                        <label><input type='radio' name='ocr'> Advanced OCR with formatting</label>
+                    </div>
+                    
+                    <div class='language-selection'>
+                        <label>Recognition Language:</label>
+                        <select>
+                            <option>English</option>
+                            <option>Urdu</option>
+                            <option>Arabic</option>
+                            <option>Multiple languages</option>
+                            <option>Auto-detect</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class='text-options'>
+                    <h3>Text Output Options:</h3>
+                    
+                    <div class='format-options'>
+                        <label>Text Format:</label>
+                        <select>
+                            <option>Plain text (no formatting)</option>
+                            <option>Preserve line breaks</option>
+                            <option>Preserve paragraphs</option>
+                            <option>Structured text</option>
+                        </select>
+                    </div>
+                    
+                    <div class='encoding'>
+                        <label>Text Encoding:</label>
+                        <select>
+                            <option>UTF-8 (Recommended)</option>
+                            <option>ASCII</option>
+                            <option>UTF-16</option>
+                            <option>ISO-8859-1</option>
+                        </select>
+                    </div>
+                    
+                    <div class='cleanup-options'>
+                        <label><input type='checkbox' checked> Remove extra spaces</label>
+                        <label><input type='checkbox' checked> Fix line breaks</label>
+                        <label><input type='checkbox'> Remove page numbers</label>
+                        <label><input type='checkbox'> Remove headers/footers</label>
+                        <label><input type='checkbox'> Extract tables as text</label>
+                    </div>
+                </div>
+                
+                <div class='page-selection'>
+                    <h3>Page Selection:</h3>
+                    
+                    <div class='selection-range'>
+                        <label>Extract text from:</label>
+                        <select>
+                            <option>All pages</option>
+                            <option>Specific pages</option>
+                            <option>Page range</option>
+                            <option>First page only</option>
+                        </select>
+                    </div>
+                    
+                    <div class='page-input'>
+                        <input type='text' placeholder='e.g., 1-5, 8, 10-12'>
+                        <small>Enter page numbers or ranges</small>
+                    </div>
+                </div>
+                
+                <div class='upload-section'>
+                    <h3>Upload PDF:</h3>
+                    <div class='upload-zone'>
+                        <i class='fas fa-file-pdf'></i>
+                        <p>Drag & drop PDF file here</p>
+                        <input type='file' accept='.pdf'>
+                    </div>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'><i class='fas fa-font'></i> Extract Text</button>
+                    <button class='preview-btn'><i class='fas fa-eye'></i> Preview Text</button>
+                </div>
+            </div>
+            
+            <div class='text-uses'>
+                <h3><i class='fas fa-code'></i> Text Applications:</h3>
+                <ul>
+                    <li>Data mining and analysis</li>
+                    <li>Content repurposing</li>
+                    <li>Translation projects</li>
+                    <li>Text-to-speech conversion</li>
+                    <li>Document indexing</li>
+                </ul>
+            </div>
+            
+            <a href='INDEX.HTML'><i class='fas fa-keyboard'></i> Text Processing Tools</a>
+        </main>
+        
+        <footer class='tool-footer'>
+            <p><i class='fas fa-align-left'></i> Accurate PDF to Text Conversion</p>
+        </footer>
+    </div>
+</body>
+</html>

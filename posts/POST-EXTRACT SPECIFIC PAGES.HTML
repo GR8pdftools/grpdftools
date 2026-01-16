@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Extract Specific Pages - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'>
+                <i class='fas fa-arrow-left'></i> Back to Split Tools
+            </a>
+            <h1>
+                <i class='fas fa-cut'></i> Extract Specific Pages
+            </h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Precise Page Extraction</h2>
+                <p>Select exact page numbers to create a new PDF containing only those pages.</p>
+                
+                <div class='tool-features'>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>Select individual pages or ranges</li>
+                        <li>Visual page preview thumbnails</li>
+                        <li>Drag to select multiple pages</li>
+                        <li>Maintain original page order or customize</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class='tool-interface'>
+                <div class='page-selection'>
+                    <h3>Select Pages:</h3>
+                    
+                    <div class='selection-methods'>
+                        <div class='method'>
+                            <label>
+                                <input type='radio' name='method' checked>
+                                Individual Pages:
+                            </label>
+                            <input type='text' placeholder='e.g., 1,3,5,7-10'>
+                            <small>Enter page numbers separated by commas</small>
+                        </div>
+                        
+                        <div class='method'>
+                            <label>
+                                <input type='radio' name='method'>
+                                Page Ranges:
+                            </label>
+                            <input type='text' placeholder='e.g., 1-5, 10-15'>
+                            <small>Enter ranges like 1-5 or 10-15</small>
+                        </div>
+                    </div>
+                    
+                    <div class='page-preview-grid'>
+                        <div class='preview-instruction'>
+                            <i class='fas fa-upload'></i>
+                            <p>Upload PDF to view page thumbnails</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class='extraction-options'>
+                    <h3>Extraction Options:</h3>
+                    
+                    <div class='option'>
+                        <label>
+                            <input type='checkbox' checked>
+                            Maintain original page order
+                        </label>
+                    </div>
+                    
+                    <div class='option'>
+                        <label>
+                            <input type='checkbox'>
+                            Create separate PDF for each selected page
+                        </label>
+                    </div>
+                    
+                    <div class='option'>
+                        <label>Output File Name:</label>
+                        <input type='text' placeholder='extracted_pages.pdf'>
+                    </div>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'>
+                        <i class='fas fa-file-export'></i> Extract Selected Pages
+                    </button>
+                    <button class='clear-btn'>
+                        <i class='fas fa-eraser'></i> Clear Selection
+                    </button>
+                </div>
+            </div>
+        </main>
+        
+        <footer class='tool-footer'>
+            <div class='footer-info'>
+                <p>
+                    <i class='fas fa-shield-alt'></i> 
+                    100% Secure - Files processed locally
+                </p>
+                <p class='file-info'>
+                    <i class='fas fa-info-circle'></i>
+                    No file size limits
+                </p>
+            </div>
+            
+            <div class='navigation'>
+                <a href='POST-SPLIT BY BOOKMARKS.HTML' class='prev-tool'>
+                    <i class='fas fa-chevron-left'></i> Previous: Split by Bookmarks
+                </a>
+                
+                <a href='INDEX.HTML' class='home-link'>
+                    <i class='fas fa-home'></i> Tool Homepage
+                </a>
+                
+                <a href='POST-SPLIT RENAME BY CONTENT.HTML' class='next-tool'>
+                    Next: Split and Rename <i class='fas fa-chevron-right'></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

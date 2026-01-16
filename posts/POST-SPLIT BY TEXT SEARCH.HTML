@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Split by Text Search - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'><i class='fas fa-arrow-left'></i> Back to Tools</a>
+            <h1><i class='fas fa-search'></i> Split by Text Search</h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Split PDF at Specific Text Patterns</h2>
+                <p>Divide documents at locations containing your search terms or patterns.</p>
+                
+                <div class='tool-features'>
+                    <h3>Search Features:</h3>
+                    <ul>
+                        <li>Multiple search terms</li>
+                        <li>Case-sensitive option</li>
+                        <li>Whole word matching</li>
+                        <li>Preview split locations</li>
+                    </ul>
+                </div>
+                
+                <div class='search-interface'>
+                    <h3>Enter Search Terms:</h3>
+                    <textarea placeholder='Enter one search term per line&#10;Example:&#10;Chapter&#10;Section&#10;Appendix' rows='4'></textarea>
+                    
+                    <div class='search-options'>
+                        <label><input type='checkbox' checked> Case sensitive</label>
+                        <label><input type='checkbox'> Whole words only</label>
+                        <label><input type='checkbox'> Include matching page</label>
+                    </div>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='search-btn'><i class='fas fa-search'></i> Find Split Points</button>
+                    <button class='process-btn'><i class='fas fa-cut'></i> Split at Results</button>
+                </div>
+            </div>
+            
+            <div class='results-preview'>
+                <h3>Split Points Found:</h3>
+                <div class='results-list'>
+                    <p>Enter search terms to see split locations</p>
+                </div>
+            </div>
+            
+            <a href='INDEX.HTML'><i class='fas fa-home'></i> Home</a>
+        </main>
+        
+        <footer class='tool-footer'>
+            <p><i class='fas fa-lightbulb'></i> Pro Tip: Use clear section headers as search terms</p>
+        </footer>
+    </div>
+</body>
+</html>

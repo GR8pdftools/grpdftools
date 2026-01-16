@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>PDF to CSV - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'><i class='fas fa-arrow-left'></i> Back to Tools</a>
+            <h1><i class='fas fa-file-csv'></i> PDF to CSV (Bonus Tool)</h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Extract Tabular Data from PDF to CSV</h2>
+                <p>Convert PDF tables into CSV format for spreadsheet applications and data analysis.</p>
+                
+                <div class='conversion-features'>
+                    <h3>CSV Features:</h3>
+                    <ul>
+                        <li>Automatic table detection</li>
+                        <li>Multi-table handling</li>
+                        <li>Custom delimiter options</li>
+                        <li>Data cleaning and formatting</li>
+                        <li>Batch processing</li>
+                    </ul>
+                </div>
+                
+                <div class='csv-options'>
+                    <h3>CSV Settings:</h3>
+                    
+                    <div class='delimiter'>
+                        <label>CSV Delimiter:</label>
+                        <select>
+                            <option>Comma (,) - Standard</option>
+                            <option>Semicolon (;)</option>
+                            <option>Tab</option>
+                            <option>Pipe (|)</option>
+                            <option>Custom delimiter</option>
+                        </select>
+                    </div>
+                    
+                    <div class='encoding'>
+                        <label>File Encoding:</label>
+                        <select>
+                            <option>UTF-8 (Recommended)</option>
+                            <option>UTF-8 BOM</option>
+                            <option>ASCII</option>
+                            <option>Windows-1252</option>
+                        </select>
+                    </div>
+                    
+                    <div class='format-options'>
+                        <label><input type='checkbox' checked> Include headers</label>
+                        <label><input type='checkbox'> Quote all fields</label>
+                        <label><input type='checkbox'> Trim whitespace</label>
+                        <label><input type='checkbox'> Convert dates to standard format</label>
+                        <label><input type='checkbox'> Detect and format numbers</label>
+                    </div>
+                </div>
+                
+                <div class='table-detection'>
+                    <h3>Table Detection:</h3>
+                    
+                    <div class='detection-method'>
+                        <label><input type='radio' name='detection' checked> Auto-detect all tables</label>
+                        <label><input type='radio' name='detection'> Manual table selection</label>
+                        <label><input type='radio' name='detection'> Specify table areas</label>
+                    </div>
+                    
+                    <div class='preview-area'>
+                        <h4>Detected Tables:</h4>
+                        <div class='table-list'>
+                            <p>Upload PDF to see detected tables</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class='upload-section'>
+                    <h3>Upload PDF:</h3>
+                    <div class='upload-zone'>
+                        <i class='fas fa-file-pdf'></i>
+                        <p>Drag & drop PDF file here</p>
+                        <input type='file' accept='.pdf'>
+                    </div>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'><i class='fas fa-table'></i> Convert to CSV</button>
+                    <button class='detect-btn'><i class='fas fa-search'></i> Detect Tables First</button>
+                    <button class='preview-btn'><i class='fas fa-eye'></i> Preview CSV</button>
+                </div>
+            </div>
+            
+            <div class='data-uses'>
+                <h3><i class='fas fa-database'></i> Data Applications:</h3>
+                <ul>
+                    <li>Import to Excel/Google Sheets</li>
+                    <li>Database population</li>
+                    <li>Data analysis projects</li>
+                    <li>Report generation</li>
+                    <li>Statistical processing</li>
+                </ul>
+            </div>
+            
+            <a href='INDEX.HTML'><i class='fas fa-gift'></i> Bonus Tools Collection</a>
+        </main>
+        
+        <footer class='tool-footer'>
+            <p><i class='fas fa-star'></i> Bonus Tool - Extra Value!</p>
+        </footer>
+    </div>
+</body>
+</html>

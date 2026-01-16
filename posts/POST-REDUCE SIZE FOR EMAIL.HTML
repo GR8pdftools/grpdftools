@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Reduce Size for Email - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'><i class='fas fa-arrow-left'></i> Back to Tools</a>
+            <h1><i class='fas fa-envelope'></i> Reduce Size for Email</h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Optimize PDFs for Email Attachment</h2>
+                <p>Compress PDF files to meet common email size limits while maintaining readability.</p>
+                
+                <div class='email-targets'>
+                    <h3>Common Email Limits:</h3>
+                    <div class='limit-options'>
+                        <button data-limit='10'>10 MB (Gmail/Outlook)</button>
+                        <button data-limit='25'>25 MB (Most Services)</button>
+                        <button data-limit='custom'>Custom Limit</button>
+                    </div>
+                    <div class='custom-limit' style='display:none;'>
+                        <input type='number' placeholder='Enter MB limit' min='1' max='100'>
+                    </div>
+                </div>
+                
+                <div class='compression-presets'>
+                    <h3>Compression Presets:</h3>
+                    <label><input type='radio' name='preset' checked> Balanced (Good quality, good size)</label>
+                    <label><input type='radio' name='preset'> Aggressive (Smaller files)</label>
+                    <label><input type='radio' name='preset'> Custom Settings</label>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'><i class='fas fa-paper-plane'></i> Optimize for Email</button>
+                    <button class='preview-btn'><i class='fas fa-eye'></i> Preview Size</button>
+                </div>
+            </div>
+            
+            <div class='size-info'>
+                <h3><i class='fas fa-info-circle'></i> Email Guidelines:</h3>
+                <ul>
+                    <li>Gmail: 25 MB attachment limit</li>
+                    <li>Outlook: 20 MB limit</li>
+                    <li>Yahoo: 25 MB limit</li>
+                    <li>Corporate: Often 10 MB limit</li>
+                </ul>
+            </div>
+            
+            <a href='INDEX.HTML'><i class='fas fa-inbox'></i> Back to Compression Tools</a>
+        </main>
+        
+        <footer class='tool-footer'>
+            <p><i class='fas fa-check-circle'></i> Email-Ready PDFs</p>
+        </footer>
+        
+        <script>
+            document.querySelectorAll('.limit-options button').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    if(this.dataset.limit === 'custom') {
+                        document.querySelector('.custom-limit').style.display = 'block';
+                    }
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

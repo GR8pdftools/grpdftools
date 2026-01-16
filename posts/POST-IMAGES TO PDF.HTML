@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Images to PDF - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'><i class='fas fa-arrow-left'></i> Back to Tools</a>
+            <h1><i class='fas fa-images'></i> Images to PDF</h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Convert Multiple Images into a Single PDF</h2>
+                <p>Combine JPG, PNG, GIF, BMP, and other image formats into a professional PDF document.</p>
+                
+                <div class='conversion-features'>
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Support for all major image formats</li>
+                        <li>Batch image processing</li>
+                        <li>Drag & drop ordering</li>
+                        <li>Image optimization and resizing</li>
+                        <li>Custom page layout options</li>
+                    </ul>
+                </div>
+                
+                <div class='image-upload'>
+                    <h3>Upload Images:</h3>
+                    <div class='upload-zone'>
+                        <i class='fas fa-cloud-upload-alt'></i>
+                        <p>Drag & drop images here or click to browse</p>
+                        <p class='formats'>Supported: JPG, PNG, GIF, BMP, TIFF, WebP</p>
+                        <input type='file' multiple accept='image/*'>
+                    </div>
+                    
+                    <div class='image-preview'>
+                        <h4>Selected Images (0):</h4>
+                        <div class='preview-container'></div>
+                    </div>
+                </div>
+                
+                <div class='pdf-options'>
+                    <h3>PDF Settings:</h3>
+                    
+                    <div class='page-size'>
+                        <label>Page Size:</label>
+                        <select>
+                            <option>Auto (Match image size)</option>
+                            <option>A4 (210×297mm)</option>
+                            <option>Letter (8.5×11in)</option>
+                            <option>Legal (8.5×14in)</option>
+                            <option>Custom size</option>
+                        </select>
+                    </div>
+                    
+                    <div class='orientation'>
+                        <label>Orientation:</label>
+                        <select>
+                            <option>Portrait</option>
+                            <option>Landscape</option>
+                            <option>Auto-detect</option>
+                        </select>
+                    </div>
+                    
+                    <div class='margins'>
+                        <label>Page Margins:</label>
+                        <select>
+                            <option>No margins (full bleed)</option>
+                            <option>Small margins</option>
+                            <option>Medium margins</option>
+                            <option>Large margins</option>
+                        </select>
+                    </div>
+                    
+                    <div class='advanced-options'>
+                        <label><input type='checkbox' checked> Optimize images for PDF</label>
+                        <label><input type='checkbox'> Resize images to fit page</label>
+                        <label><input type='checkbox'> Maintain aspect ratio</label>
+                        <label><input type='checkbox'> Add image captions</label>
+                        <label><input type='checkbox'> Create clickable thumbnails</label>
+                    </div>
+                </div>
+                
+                <div class='order-controls'>
+                    <h3>Image Order:</h3>
+                    <p>Drag images to reorder. First image will be first page.</p>
+                    <button class='sort-btn'><i class='fas fa-sort-alpha-down'></i> Sort by Name</button>
+                    <button class='reverse-btn'><i class='fas fa-exchange-alt'></i> Reverse Order</button>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'><i class='fas fa-file-pdf'></i> Create PDF</button>
+                    <button class='add-btn'><i class='fas fa-plus'></i> Add More Images</button>
+                    <button class='clear-btn'><i class='fas fa-trash'></i> Clear All</button>
+                </div>
+            </div>
+            
+            <div class='use-cases'>
+                <h3><i class='fas fa-camera'></i> Common Uses:</h3>
+                <ul>
+                    <li>Photo albums to PDF</li>
+                    <li>Scan multiple pages</li>
+                    <li>Screenshot collections</li>
+                    <li>Document digitization</li>
+                    <li>Portfolio creation</li>
+                </ul>
+            </div>
+            
+            <a href='INDEX.HTML'><i class='fas fa-th'></i> All Conversion Tools</a>
+        </main>
+        
+        <footer class='tool-footer'>
+            <p><i class='fas fa-book'></i> Professional Image to PDF Conversion</p>
+        </footer>
+    </div>
+</body>
+</html>

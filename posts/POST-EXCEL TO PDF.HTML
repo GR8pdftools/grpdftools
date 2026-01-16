@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Excel to PDF - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'><i class='fas fa-arrow-left'></i> Back to Tools</a>
+            <h1><i class='fas fa-table'></i> Excel to PDF</h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Convert Excel Spreadsheets to PDF Reports</h2>
+                <p>Transform Excel files (.xls, .xlsx) into professional PDF documents with proper formatting.</p>
+                
+                <div class='conversion-features'>
+                    <h3>Excel Features Preserved:</h3>
+                    <ul>
+                        <li>Cell formatting and styles</li>
+                        <li>Formulas as values</li>
+                        <li>Charts and graphs</li>
+                        <li>Multiple worksheet handling</li>
+                        <li>Page breaks and scaling</li>
+                    </ul>
+                </div>
+                
+                <div class='worksheet-options'>
+                    <h3>Worksheet Selection:</h3>
+                    
+                    <div class='selection-method'>
+                        <label><input type='radio' name='sheets' checked> All worksheets</label>
+                        <label><input type='radio' name='sheets'> Current worksheet only</label>
+                        <label><input type='radio' name='sheets'> Select specific worksheets</label>
+                    </div>
+                    
+                    <div class='sheet-list' style='display:none;'>
+                        <h4>Select Worksheets:</h4>
+                        <div class='sheet-checkboxes'>
+                            <!-- Will be populated with JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class='print-options'>
+                    <h3>Print/PDF Settings:</h3>
+                    
+                    <div class='orientation'>
+                        <label>Page Orientation:</label>
+                        <select>
+                            <option>Portrait</option>
+                            <option>Landscape</option>
+                            <option>Auto-detect</option>
+                        </select>
+                    </div>
+                    
+                    <div class='scaling'>
+                        <label>Scaling:</label>
+                        <select>
+                            <option>Fit sheet on one page</option>
+                            <option>Fit all columns on one page</option>
+                            <option>Fit all rows on one page</option>
+                            <option>No scaling</option>
+                        </select>
+                    </div>
+                    
+                    <div class='pdf-options'>
+                        <label><input type='checkbox' checked> Include gridlines</label>
+                        <label><input type='checkbox' checked> Include row/column headers</label>
+                        <label><input type='checkbox'> Create table of contents</label>
+                        <label><input type='checkbox'> Add page numbers</label>
+                        <label><input type='checkbox'> Preserve Excel formatting</label>
+                    </div>
+                </div>
+                
+                <div class='upload-section'>
+                    <h3>Upload Excel File:</h3>
+                    <div class='upload-zone'>
+                        <i class='fas fa-file-excel'></i>
+                        <p>Drag & drop Excel file here</p>
+                        <input type='file' accept='.xls,.xlsx,.csv'>
+                    </div>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'><i class='fas fa-file-pdf'></i> Convert to PDF</button>
+                    <button class='preview-btn'><i class='fas fa-eye'></i> Preview PDF</button>
+                </div>
+            </div>
+            
+            <div class='report-uses'>
+                <h3><i class='fas fa-chart-line'></i> Report Applications:</h3>
+                <ul>
+                    <li>Financial reports</li>
+                    <li>Data analysis sharing</li>
+                    <li>Budget presentations</li>
+                    <li>Inventory reports</li>
+                    <li>Performance dashboards</li>
+                </ul>
+            </div>
+            
+            <a href='INDEX.HTML'><i class='fas fa-file-contract'></i> Business Tools</a>
+        </main>
+        
+        <footer class='tool-footer'>
+            <p><i class='fas fa-chart-pie'></i> Professional Excel to PDF Conversion</p>
+        </footer>
+    </div>
+</body>
+</html>

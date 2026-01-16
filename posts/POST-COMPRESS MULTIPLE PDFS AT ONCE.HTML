@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Compress Multiple PDFs at Once - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'><i class='fas fa-arrow-left'></i> Back to Tools</a>
+            <h1><i class='fas fa-layer-group'></i> Compress Multiple PDFs at Once</h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Batch PDF Compression</h2>
+                <p>Upload and compress multiple PDF files simultaneously with consistent settings.</p>
+                
+                <div class='batch-features'>
+                    <h3>Batch Processing Features:</h3>
+                    <ul>
+                        <li>Upload unlimited PDF files</li>
+                        <li>Same compression settings for all</li>
+                        <li>Individual progress tracking</li>
+                        <li>Download all as ZIP archive</li>
+                        <li>Continue adding files during processing</li>
+                    </ul>
+                </div>
+                
+                <div class='batch-upload'>
+                    <h3>Upload Multiple Files:</h3>
+                    <div class='upload-zone'>
+                        <i class='fas fa-cloud-upload-alt'></i>
+                        <p>Drag & drop multiple PDF files here</p>
+                        <p class='subtext'>or click to browse (Select multiple files)</p>
+                        <input type='file' multiple accept='.pdf'>
+                    </div>
+                    
+                    <div class='file-list'>
+                        <h4>Selected Files (0):</h4>
+                        <div class='files-container'></div>
+                    </div>
+                </div>
+                
+                <div class='batch-settings'>
+                    <h3>Compression Settings:</h3>
+                    <select class='compression-preset'>
+                        <option>Same settings for all files</option>
+                        <option>Smart auto-detection per file</option>
+                        <option>Custom per file (advanced)</option>
+                    </select>
+                    
+                    <div class='compression-level'>
+                        <label>Compression Level:</label>
+                        <select>
+                            <option>Medium (Recommended)</option>
+                            <option>High</option>
+                            <option>Maximum</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'><i class='fas fa-play-circle'></i> Start Batch Compression</button>
+                    <button class='clear-btn'><i class='fas fa-trash'></i> Clear All Files</button>
+                </div>
+            </div>
+            
+            <div class='batch-progress' style='display:none;'>
+                <h3>Processing Progress:</h3>
+                <div class='progress-bar'>
+                    <div class='progress-fill'></div>
+                </div>
+                <p class='progress-text'>0/0 files processed</p>
+            </div>
+            
+            <div class='batch-tips'>
+                <h3><i class='fas fa-lightbulb'></i> Batch Tips:</h3>
+                <ul>
+                    <li>Organize files before uploading</li>
+                    <li>Use consistent naming conventions</li>
+                    <li>Check total size before processing</li>
+                    <li>Download ZIP for easier management</li>
+                </ul>
+            </div>
+            
+            <a href='INDEX.HTML'><i class='fas fa-th'></i> All PDF Tools</a>
+        </main>
+        
+        <footer class='tool-footer'>
+            <p><i class='fas fa-rocket'></i> High-Efficiency Batch Processing</p>
+        </footer>
+        
+        <script>
+            // Batch file handling
+            document.addEventListener('DOMContentLoaded', function() {
+                const fileInput = document.querySelector('input[type="file"]');
+                const filesContainer = document.querySelector('.files-container');
+                
+                fileInput.addEventListener('change', function(e) {
+                    filesContainer.innerHTML = '';
+                    Array.from(this.files).forEach((file, index) => {
+                        const fileItem = document.createElement('div');
+                        fileItem.className = 'file-item';
+                        fileItem.innerHTML = `
+                            <i class="fas fa-file-pdf"></i>
+                            <span>${file.name}</span>
+                            <span class="file-size">(${(file.size / 1024 / 1024).toFixed(2)} MB)</span>
+                        `;
+                        filesContainer.appendChild(fileItem);
+                    });
+                    
+                    document.querySelector('.file-list h4').textContent = 
+                        `Selected Files (${this.files.length}):`;
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

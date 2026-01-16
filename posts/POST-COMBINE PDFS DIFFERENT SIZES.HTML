@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Combine PDFs with Different Sizes - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'>
+                <i class='fas fa-arrow-left'></i> Back to Tools
+            </a>
+            <h1>
+                <i class='fas fa-expand-alt'></i> Combine PDFs with Different Sizes
+            </h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Merge PDFs with Varied Page Sizes</h2>
+                <p>Combine PDF documents that have different page dimensions (A4, Letter, Legal, etc.).</p>
+                
+                <div class='tool-features'>
+                    <h3>Features:</h3>
+                    <ul>
+                        <li>Automatically handle different page sizes</li>
+                        <li>Option to standardize to one size</li>
+                        <li>Maintain original dimensions if preferred</li>
+                        <li>Preview size variations before merging</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class='tool-interface'>
+                <div class='size-options'>
+                    <h3>Size Handling:</h3>
+                    <label>
+                        <input type='radio' name='size-handling' checked>
+                        Maintain Original Sizes
+                    </label>
+                    <label>
+                        <input type='radio' name='size-handling'>
+                        Convert to Standard Size:
+                        <select>
+                            <option>A4 (210×297mm)</option>
+                            <option>Letter (216×279mm)</option>
+                            <option>Legal (216×356mm)</option>
+                        </select>
+                    </label>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'>
+                        <i class='fas fa-object-group'></i> Combine PDFs
+                    </button>
+                </div>
+            </div>
+        </main>
+        
+        <footer class='tool-footer'>
+            <p>Free Tool - No Registration Required</p>
+            <a href='INDEX.HTML'>← Return to All Tools</a>
+        </footer>
+    </div>
+</body>
+</html>

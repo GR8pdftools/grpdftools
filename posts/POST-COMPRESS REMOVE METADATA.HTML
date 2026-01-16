@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Compress and Remove Metadata - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'><i class='fas fa-arrow-left'></i> Back to Tools</a>
+            <h1><i class='fas fa-eraser'></i> Compress and Remove Metadata</h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Privacy-Focused PDF Compression</h2>
+                <p>Reduce file size while removing sensitive metadata and personal information from PDF documents.</p>
+                
+                <div class='privacy-warning'>
+                    <div class='warning-icon'>
+                        <i class='fas fa-user-shield'></i>
+                    </div>
+                    <p><strong>Important:</strong> Metadata can contain author names, creation dates, software used, edits history, and other private information.</p>
+                </div>
+                
+                <div class='metadata-types'>
+                    <h3>Types of Metadata Removed:</h3>
+                    <div class='metadata-grid'>
+                        <div class='meta-item'><i class='fas fa-user'></i> Author Information</div>
+                        <div class='meta-item'><i class='fas fa-calendar'></i> Creation/Modification Dates</div>
+                        <div class='meta-item'><i class='fas fa-desktop'></i> Software Information</div>
+                        <div class='meta-item'><i class='fas fa-key'></i> Document Properties</div>
+                        <div class='meta-item'><i class='fas fa-history'></i> Edit History</div>
+                        <div class='meta-item'><i class='fas fa-map-marker'></i> Location Data</div>
+                        <div class='meta-item'><i class='fas fa-comment'></i> Comments & Annotations</div>
+                        <div class='meta-item'><i class='fas fa-code'></i> Hidden Data & Scripts</div>
+                    </div>
+                </div>
+                
+                <div class='removal-options'>
+                    <h3>Metadata Removal Options:</h3>
+                    
+                    <div class='removal-presets'>
+                        <label><input type='radio' name='removal' checked> Remove All Metadata</label>
+                        <label><input type='radio' name='removal'> Selective Removal</label>
+                        <label><input type='radio' name='removal'> Keep Basic Properties</label>
+                    </div>
+                    
+                    <div class='selective-options' style='display:none;'>
+                        <h4>Select Which to Remove:</h4>
+                        <label><input type='checkbox' checked> Author Information</label>
+                        <label><input type='checkbox' checked> Dates & Timestamps</label>
+                        <label><input type='checkbox'> Software Information</label>
+                        <label><input type='checkbox' checked> Edit History</label>
+                        <label><input type='checkbox'> Document Properties</label>
+                        <label><input type='checkbox' checked> Comments & Markups</label>
+                    </div>
+                </div>
+                
+                <div class='compression-options'>
+                    <h3>Compression Settings:</h3>
+                    <select>
+                        <option>Standard Compression + Metadata Removal</option>
+                        <option>Aggressive Compression + Metadata Removal</option>
+                        <option>Metadata Removal Only (No Compression)</option>
+                    </select>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'><i class='fas fa-user-secret'></i> Clean & Compress</button>
+                    <button class='preview-btn'><i class='fas fa-search'></i> Preview Metadata</button>
+                </div>
+            </div>
+            
+            <div class='privacy-scenarios'>
+                <h3><i class='fas fa-scroll'></i> When to Use This Tool:</h3>
+                <ul>
+                    <li>Sharing documents publicly</li>
+                    <li>Sending files to clients</li>
+                    <li>Uploading to websites</li>
+                    <li>Legal document preparation</li>
+                    <li>Confidential document sharing</li>
+                    <li>Before document publication</li>
+                </ul>
+            </div>
+            
+            <a href='INDEX.HTML'><i class='fas fa-shield-alt'></i> Privacy Tools</a>
+        </main>
+        
+        <footer class='tool-footer'>
+            <p><i class='fas fa-fingerprint'></i> Metadata-Free PDF Processing</p>
+        </footer>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const removalOptions = document.querySelectorAll('input[name="removal"]');
+                const selectiveOptions = document.querySelector('.selective-options');
+                
+                removalOptions.forEach(option => {
+                    option.addEventListener('change', function() {
+                        if(this.value === 'Selective Removal') {
+                            selectiveOptions.style.display = 'block';
+                        } else {
+                            selectiveOptions.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

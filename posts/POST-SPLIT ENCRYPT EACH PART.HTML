@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Split and Encrypt Each Part - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'><i class='fas fa-arrow-left'></i> Back to Tools</a>
+            <h1><i class='fas fa-lock'></i> Split and Encrypt Each Part</h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Secure Your Split Files</h2>
+                <p>Split PDF into multiple files and add password protection to each part for enhanced security.</p>
+                
+                <div class='tool-features'>
+                    <h3>Security Features:</h3>
+                    <ul>
+                        <li>Password protect each split file</li>
+                        <li>AES-256 encryption standard</li>
+                        <li>Different passwords per file option</li>
+                        <li>Permission control settings</li>
+                    </ul>
+                </div>
+                
+                <div class='encryption-options'>
+                    <h3>Encryption Settings:</h3>
+                    <div class='password-section'>
+                        <label>Password for all files:</label>
+                        <input type='password' placeholder='Enter secure password'>
+                    </div>
+                    
+                    <div class='permission-options'>
+                        <label><input type='checkbox' checked> Allow printing</label>
+                        <label><input type='checkbox' checked> Allow copying text</label>
+                        <label><input type='checkbox'> Allow modifications</label>
+                    </div>
+                    
+                    <div class='security-level'>
+                        <label>Encryption Level:</label>
+                        <select>
+                            <option>128-bit AES (Faster)</option>
+                            <option>256-bit AES (Most Secure)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'><i class='fas fa-shield-alt'></i> Split & Encrypt</button>
+                </div>
+            </div>
+            
+            <div class='security-tips'>
+                <h3><i class='fas fa-exclamation-triangle'></i> Security Tips:</h3>
+                <ul>
+                    <li>Use strong passwords with mixed characters</li>
+                    <li>Store passwords securely</li>
+                    <li>Consider different passwords for sensitive files</li>
+                    <li>Test encrypted files before sharing</li>
+                </ul>
+            </div>
+            
+            <a href='INDEX.HTML'><i class='fas fa-home'></i> Return to Home</a>
+        </main>
+        
+        <footer class='tool-footer'>
+            <p><i class='fas fa-user-shield'></i> Military-Grade Encryption</p>
+            <p class='copyright'>© 2026 GR8PDFTools - Secure PDF Processing</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>PDF to Excel (.xlsx) - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'><i class='fas fa-arrow-left'></i> Back to Tools</a>
+            <h1><i class='fas fa-file-excel'></i> PDF to Excel (.xlsx)</h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Extract Tables & Data from PDF to Excel</h2>
+                <p>Convert PDF tables and data into editable Excel spreadsheets with automatic cell detection.</p>
+                
+                <div class='data-features'>
+                    <h3>Data Extraction Features:</h3>
+                    <ul>
+                        <li>Automatic table detection</li>
+                        <li>Cell structure preservation</li>
+                        <li>Number formatting retention</li>
+                        <li>Multiple table handling</li>
+                        <li>Formula detection</li>
+                    </ul>
+                </div>
+                
+                <div class='table-detection'>
+                    <h3>Table Detection Options:</h3>
+                    
+                    <div class='detection-method'>
+                        <label><input type='radio' name='detection' checked> Automatic Detection</label>
+                        <label><input type='radio' name='detection'> Manual Table Selection</label>
+                        <label><input type='radio' name='detection'> Custom Area Selection</label>
+                    </div>
+                    
+                    <div class='detection-settings'>
+                        <label>Detection Accuracy:</label>
+                        <select>
+                            <option>High (Slow but accurate)</option>
+                            <option>Medium (Balanced)</option>
+                            <option>Fast (Basic detection)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class='excel-options'>
+                    <h3>Excel Output Options:</h3>
+                    
+                    <div class='output-format'>
+                        <label>Excel Format:</label>
+                        <select>
+                            <option>.xlsx (Excel 2007+)</option>
+                            <option>.xls (Excel 97-2003)</option>
+                            <option>.csv (Comma Separated)</option>
+                        </select>
+                    </div>
+                    
+                    <div class='worksheet-options'>
+                        <label>Worksheet Handling:</label>
+                        <select>
+                            <option>One worksheet per table</option>
+                            <option>All tables in one worksheet</option>
+                            <option>Custom worksheet naming</option>
+                        </select>
+                    </div>
+                    
+                    <div class='data-options'>
+                        <label><input type='checkbox' checked> Preserve number formats</label>
+                        <label><input type='checkbox'> Detect formulas</label>
+                        <label><input type='checkbox' checked> Maintain cell borders</label>
+                        <label><input type='checkbox'> Extract chart data</label>
+                        <label><input type='checkbox'> Include headers and footers</label>
+                    </div>
+                </div>
+                
+                <div class='preview-area'>
+                    <h3>Table Preview:</h3>
+                    <div class='table-preview'>
+                        <p>Upload PDF to preview detected tables</p>
+                    </div>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'><i class='fas fa-table'></i> Convert to Excel</button>
+                    <button class='detect-btn'><i class='fas fa-search'></i> Detect Tables First</button>
+                </div>
+            </div>
+            
+            <div class='data-applications'>
+                <h3><i class='fas fa-database'></i> Data Applications:</h3>
+                <ul>
+                    <li>Financial report analysis</li>
+                    <li>Data migration projects</li>
+                    <li>Research data extraction</li>
+                    <li>Inventory list conversion</li>
+                    <li>Statistical data processing</li>
+                </ul>
+            </div>
+            
+            <a href='INDEX.HTML'><i class='fas fa-file-export'></i> Data Extraction Tools</a>
+        </main>
+        
+        <footer class='tool-footer'>
+            <p><i class='fas fa-chart-bar'></i> Accurate PDF to Excel Conversion</p>
+        </footer>
+    </div>
+</body>
+</html>

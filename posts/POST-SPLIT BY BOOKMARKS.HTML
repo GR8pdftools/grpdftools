@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Split by Bookmarks - GR8PDFTools</title>
+    <link rel='stylesheet' href='STYLE.CSS'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class='tool-container'>
+        <header class='tool-header'>
+            <a href='INDEX.HTML' class='back-btn'>
+                <i class='fas fa-arrow-left'></i> Back to Split Tools
+            </a>
+            <h1>
+                <i class='fas fa-bookmark'></i> Split by Bookmarks
+            </h1>
+        </header>
+        
+        <main class='tool-content'>
+            <div class='tool-description'>
+                <h2>Intelligent PDF Splitting</h2>
+                <p>Automatically split your PDF at existing bookmark locations for logical document separation.</p>
+                
+                <div class='tool-features'>
+                    <h3>Smart Features:</h3>
+                    <ul>
+                        <li>Detect all bookmarks in PDF</li>
+                        <li>Split at each bookmark level</li>
+                        <li>Preserve bookmark hierarchy in new files</li>
+                        <li>Custom naming based on bookmark titles</li>
+                    </ul>
+                </div>
+                
+                <div class='tool-instructions'>
+                    <h3>How It Works:</h3>
+                    <ol>
+                        <li>Upload a PDF with bookmarks</li>
+                        <li>Tool detects all bookmark locations</li>
+                        <li>Preview split points</li>
+                        <li>Adjust splitting options if needed</li>
+                        <li>Download separate PDF files</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class='tool-interface'>
+                <div class='bookmark-options'>
+                    <h3>Splitting Options:</h3>
+                    
+                    <div class='option-group'>
+                        <label>
+                            <input type='checkbox' checked>
+                            Split at top-level bookmarks
+                        </label>
+                    </div>
+                    
+                    <div class='option-group'>
+                        <label>
+                            <input type='checkbox'>
+                            Include nested bookmarks
+                        </label>
+                    </div>
+                    
+                    <div class='option-group'>
+                        <label>File Naming:</label>
+                        <select>
+                            <option>Use bookmark titles</option>
+                            <option>Bookmark_1, Bookmark_2</option>
+                            <option>Custom prefix</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class='preview-area'>
+                    <h3>Bookmark Preview:</h3>
+                    <div class='bookmark-list'>
+                        <p>Upload PDF to see bookmark structure</p>
+                    </div>
+                </div>
+                
+                <div class='tool-controls'>
+                    <button class='process-btn'>
+                        <i class='fas fa-cut'></i> Split by Bookmarks
+                    </button>
+                    <button class='preview-btn'>
+                        <i class='fas fa-eye'></i> Preview Split Points
+                    </button>
+                </div>
+            </div>
+        </main>
+        
+        <footer class='tool-footer'>
+            <div class='footer-content'>
+                <p class='quality-tag'>
+                    <i class='fas fa-star'></i> Professional Grade Tool
+                </p>
+                <div class='footer-nav'>
+                    <a href='INDEX.HTML' class='nav-link'>
+                        <i class='fas fa-th'></i> All Tools
+                    </a>
+                    <a href='POST-SPLIT BY PAGE RANGES.HTML' class='nav-link'>
+                        <i class='fas fa-arrow-left'></i> Previous Tool
+                    </a>
+                    <a href='POST-EXTRACT SPECIFIC PAGES.HTML' class='nav-link'>
+                        <i class='fas fa-arrow-right'></i> Next Tool
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        // Bookmark splitting functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Split by Bookmarks tool initialized');
+            
+            // File upload handler
+            const fileInput = document.querySelector('input[type="file"]');
+            if (fileInput) {
+                fileInput.addEventListener('change', function(e) {
+                    if (this.files.length > 0) {
+                        document.querySelector('.bookmark-list').innerHTML = 
+                            '<p>✓ PDF loaded. Analyzing bookmarks...</p>';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
